@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Cadastro simples de contatos</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <h3>Cadastro de Contatos</h3>
+  <select id="listaContatos" size="10" onchange="obter()"></select><br><br>
+  <label>Nome...</label><input id="nome" type="text" size="50" /><br><br>
+  <label>Email...</label><input id="email" type="text" size="20" /><br><br>
+  <label>Fone....</label><input id="fone" type="text" size="20" /><br><br>
+  <input type="button" value="Salvar" onclick="salvar()" />
+  <input id="excluir" type="button" value="Excluir" onclick="excluir()" disabled />
+</body>
+
+</html>
